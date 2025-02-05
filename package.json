@@ -1,0 +1,15 @@
+{
+  "name": "m-ton",
+  "version": "1.0.0",
+  "description": "A \"maquininha Ton\" é uma das soluções de pagamento disponibilizadas pela Ton, uma fintech que oferece serviços para pequenos empreendedores e autônomos. Ela permite que os usuários realizem cobranças de forma simples e rápida, aceitando cartões de crédito, débito e até mesmo PIX. A maquininha Ton se destaca pela praticidade e pela isenção de taxas mensais, além de oferecer um processo de adesão bem simples. É ideal para quem busca uma opção econômica e eficiente para aceitar pagamentos no dia a dia de forma descomplicada.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
