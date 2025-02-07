@@ -1,4 +1,4 @@
-// Buttom visible scroll window
+// Buttom fixo com Scroll
 function btnScroll() {
     const btnBack = document.querySelector('#btn-fixo > section > a i');
     btnBack.style.display = 'none';
@@ -68,8 +68,22 @@ function textAnimation() {
 };
 textAnimation();
 
-// Navbar icon
+// Menu
 function navBar() {
-    const navLinks = document.querySelector('.nav-header');
-    const navIcons = document.querySelector('.navbar-icon');
+    const navLinks = document.querySelector('.hero > .nav-header');
+    const btnOpenMenu = document.querySelector('.navbar-icon > .bi-list');
+    const btnCloseMenu = document.querySelector('.navbar-icon > .bi-x-lg');
+
+    btnOpenMenu.addEventListener('click', () => {
+        navLinks.style.display = 'flex';
+        btnOpenMenu.style.display = 'none';
+        btnCloseMenu.style.display = 'block'
+    });
+
+    btnCloseMenu.addEventListener('click', () => {
+        navLinks.style.display = 'none';
+        btnOpenMenu.style.display = 'flex';
+        btnCloseMenu.style.display = 'none'
+    });
 };
+navBar();
