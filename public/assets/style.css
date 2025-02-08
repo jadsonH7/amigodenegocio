@@ -390,7 +390,7 @@ body {
   flex-direction: column;
   row-gap: 1rem;
   animation: carrossel 90s infinite;
-  transition: 1s;
+  transition: .1s;
   position: relative;
   cursor: pointer;
 }
@@ -570,7 +570,7 @@ body {
 .box-maquina > ul > li > span h1 {
   font-size: 15rem;
   font-weight: 200;
-  color: var(--color-border);
+  color: var(--color-secondary);
   cursor: default;
   opacity: .8;
 }
@@ -582,14 +582,14 @@ body {
 .maquina-content > h2 {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color-border);
+  color: var(--color-secondary);
   cursor: default;
 }
 
 .maquina-content > p {
   font-size: 1.2rem;
-  font-weight: 400;
-  color: var(--color-border);
+  font-weight: 500;
+  color: var(--color-secondary);
   cursor: default;
 }
 
@@ -1193,6 +1193,7 @@ p:nth-child(2) {
 
   .vantagem-content > p {
     text-align: justify;
+    font-size: 1.3rem;
   }
 
   /* Carrossel de informações */
@@ -1206,23 +1207,48 @@ p:nth-child(2) {
 
   .card:nth-child(n) .card-content > h2 {
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
+    border-radius: 2rem;
   }
 
   .card:nth-child(n) .card-content > p {
     font-size: 1.2rem;
     text-align: justify;
+    border-radius: 2rem;
+    background-color: var(--color-primary);
+    padding: .3rem;
   }
+
+  
+@keyframes carrossel {
+  0% {
+    transform: translateX(3px);
+  }
+
+  100% {
+    transform: translateX(-3500px);
+  }
+}
 
   /* Maquininha informações */
   .maquina-line {
     display: none;
   }
 
+  .box-maquina {
+    margin: 0;
+  }
+
   .box-maquina > ul {
     width: 100%;
+    max-height: 240%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5rem;
+  }
+
+  .box-maquina > span {
+    margin: 4rem auto;
   }
 
   .maquina1,
@@ -1239,6 +1265,14 @@ p:nth-child(2) {
 
   .maquina-content {
     width: 100%;
+    box-shadow: -1px 2px 5px 1px var(--color-detail);
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+    transition: .1s;
+  }
+
+  .maquina-content:hover {
+    box-shadow: -1px 1px 5px -1px var(--color-primary);
   }
 
   .box-maquina > ul > li > span h1 {
@@ -1246,13 +1280,36 @@ p:nth-child(2) {
   }
 
   .maquina-content > h2 {
-    font-size: 1.5rem;
     text-align: center;
     padding-bottom: 2rem;
+    color: var(--color-primary);
   }
 
   .maquina-content > p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: justify;
+    line-height: 2rem;
+  }
+
+  /* Pagina sobre */
+  .box-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-about > h2 {
+    font-size: 3rem;
+  }
+
+  .box-about > p {
+    font-size: 1.3rem;
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+  .box-about .btn-about {
+    display: flex;
+    flex-direction: column;
   }
 }

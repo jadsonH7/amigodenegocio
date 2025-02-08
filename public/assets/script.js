@@ -116,10 +116,12 @@ navBar();
 // Pagina vantagem
 function vantagens() {
     const vantagemImg = document.querySelector('.vantagem-img > img')
+    const logoMaquina = document.querySelector('.box-maquina > span > img');
 
     const width = window.innerWidth;
     if(width <= 440) {
         vantagemImg.src = 'public/imgs/banner/banner-3.png';
+        logoMaquina.src = 'public/imgs/logotipo/Ton_Parceiro_Logo_RGB-07.png';
     }
 };
 vantagens();
