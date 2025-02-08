@@ -70,6 +70,7 @@ textAnimation();
 
 // Menu
 function navBar() {
+    const logo = document.querySelector('.logo');
     const navLinks = document.querySelector('.hero > .nav-header');
     const btnOpenMenu = document.querySelector('.navbar-icon > .bi-list');
     const btnCloseMenu = document.querySelector('.navbar-icon > .bi-x-lg');
@@ -78,13 +79,33 @@ function navBar() {
         navLinks.style.display = 'flex';
         btnOpenMenu.style.display = 'none';
         btnCloseMenu.style.display = 'block'
+        logo.classList.add('logo-position');
+        logo.style.visibility = 'hidden';
     });
 
     btnCloseMenu.addEventListener('click', () => {
         navLinks.style.display = 'none';
         btnOpenMenu.style.display = 'flex';
         btnCloseMenu.style.display = 'none'
+        logo.classList.remove('logo-position');
+        logo.style.visibility = 'visible';
     });
+
+    const h2Menu = document.createElement('h2');
+    const imgMenu = document.createElement('img');
+    const boxLogo = document.createElement('span');
+
+    h2Menu.classList = 'title-menu';
+    h2Menu.textContent = 'Fala meu parceiro!';
+
+    imgMenu.src = 'public/imgs/adesivos/Property 1=Padra╠âo.png';
+    imgMenu.classList = 'img-menu';
+
+    boxLogo.classList = 'box-logo';
+
+    boxLogo.appendChild(imgMenu);
+    navLinks.append(boxLogo, h2Menu);
+
 };
 navBar();
 
