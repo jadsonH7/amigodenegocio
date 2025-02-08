@@ -102,6 +102,11 @@ body {
   background-color: transparent;
 }
 
+.box-logo,
+.title-menu {
+  display: none;
+}
+
 /* Conteudo Header */
 #call-action {
   max-width: 1440px;
@@ -567,6 +572,7 @@ body {
   font-weight: 200;
   color: var(--color-border);
   cursor: default;
+  opacity: .8;
 }
 
 .maquina-content {
@@ -1007,18 +1013,19 @@ p:nth-child(2) {
   .hero .logo {
     width: 120px;
   }
-  
+
   .box-logo {
     width: 115px;
     position: absolute;
     top: 0;
+    display: block;
   }
 
   .img-menu {
     width: 100%;
     object-fit: cover;
     animation: imgAnime 2s infinite;
-    transition: .1s;
+    transition: 0.1s;
   }
 
   @keyframes imgAnime {
@@ -1072,7 +1079,8 @@ p:nth-child(2) {
     position: absolute;
     bottom: 4rem;
     color: var(--color-primary);
-    transition: .3s;
+    transition: 0.3s;
+    display: block;
   }
 
   .title-menu:hover {
@@ -1115,23 +1123,39 @@ p:nth-child(2) {
     margin: 6.5rem auto;
   }
 
-  .call-content > h1 {
-    font-size: 2.5rem;
-  }
-
   .call-content > p {
     text-align: justify;
     font-size: 1.3rem;
   }
 
-  .checkout {
-    animation: btn-rigth 3s forwards;
+  .checkout > a:hover {
+    box-shadow: 10px 10px 0px 0px var(--color-secondary);
   }
 
   .banner-main {
     width: 200%;
     height: 1fr;
     margin: -5rem 0 0 -40%;
+  }
+
+  .banner-main > img {
+    transition: 0.3s;
+    animation: bannerAnime 3s infinite;
+  }
+
+  @keyframes bannerAnime {
+    0% {
+      transform: translateY(0px);
+      opacity: 0.9;
+    }
+    50% {
+      transform: translateY(20px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 0.9;
+    }
   }
 
   /* Upsell atenção */
@@ -1141,5 +1165,94 @@ p:nth-child(2) {
     row-gap: 3rem;
     padding: 1rem 0;
     margin-top: -2rem;
+  }
+
+  .item-upsell > span:nth-child(2) > p:nth-child(1) {
+    font-size: 1.4rem;
+  }
+
+  .item-upsell > span:nth-child(2) > p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  /* Vantagens sobre a maquina */
+  .vantagem {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+
+  .vantagem-content {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+  }
+
+  .vantagem-content > p {
+    text-align: justify;
+  }
+
+  /* Carrossel de informações */
+  .cards-carrossel > h2 {
+    font-size: 2.5rem;
+  }
+
+  .card > span {
+    width: 300px;
+  }
+
+  .card:nth-child(n) .card-content > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card:nth-child(n) .card-content > p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  /* Maquininha informações */
+  .maquina-line {
+    display: none;
+  }
+
+  .box-maquina > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .maquina1,
+  .maquina3,
+  .maquina5 {
+    padding: 0;
+  }
+
+  .maquina2,
+  .maquina4,
+  .maquina6 {
+    padding: 0;
+  }
+
+  .maquina-content {
+    width: 100%;
+  }
+
+  .box-maquina > ul > li > span h1 {
+    display: none;
+  }
+
+  .maquina-content > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .maquina-content > p {
+    font-size: 1.2rem;
+    text-align: justify;
   }
 }

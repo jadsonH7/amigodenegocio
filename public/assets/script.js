@@ -77,16 +77,20 @@ function navBar() {
 
     btnOpenMenu.addEventListener('click', () => {
         navLinks.style.display = 'flex';
+
         btnOpenMenu.style.display = 'none';
-        btnCloseMenu.style.display = 'block'
+        btnCloseMenu.style.display = 'block';
+
         logo.classList.add('logo-position');
         logo.style.visibility = 'hidden';
     });
 
     btnCloseMenu.addEventListener('click', () => {
         navLinks.style.display = 'none';
+
         btnOpenMenu.style.display = 'flex';
-        btnCloseMenu.style.display = 'none'
+        btnCloseMenu.style.display = 'none';
+
         logo.classList.remove('logo-position');
         logo.style.visibility = 'visible';
     });
@@ -109,3 +113,13 @@ function navBar() {
 };
 navBar();
 
+// Pagina vantagem
+function vantagens() {
+    const vantagemImg = document.querySelector('.vantagem-img > img')
+
+    const width = window.innerWidth;
+    if(width <= 440) {
+        vantagemImg.src = 'public/imgs/banner/banner-3.png';
+    }
+};
+vantagens();
