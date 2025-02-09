@@ -97,7 +97,7 @@ body {
 .bi-x-lg {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color--color-primary);
+  color: var(--color-primary);
   cursor: pointer;
   background-color: transparent;
 }
