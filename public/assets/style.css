@@ -238,11 +238,11 @@ body {
 
 .item-upsell i {
   font-size: 2rem;
-  border: 2px solid var(--color-border);
+  border: 2px solid var(--color-secondary);
   padding: 0.75rem;
   border-radius: 50%;
   text-align: center;
-  color: var(--color-border);
+  color: var(--color-secondary);
 }
 
 .item-upsell i:hover {
