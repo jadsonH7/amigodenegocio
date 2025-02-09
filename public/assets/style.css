@@ -1075,7 +1075,7 @@ p:nth-child(2) {
   }
 
   .title-menu {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     position: absolute;
     bottom: 8%;
@@ -1128,15 +1128,13 @@ p:nth-child(2) {
   }
 
   .call-content h1 {
-    font-size: 250%;
+    font-size: 2.3rem;
+    font-weight: 700;
   }
 
   .call-content > p {
     text-align: justify;
-  }
-
-  .checkout > a {
-    padding: 4% 15%;
+    font-size: 1.1rem;
   }
 
   .checkout > a:hover {
@@ -1173,20 +1171,24 @@ p:nth-child(2) {
   .box-upsell {
     overflow-x: hidden;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 1.5rem;
     padding: 1rem 0;
     margin-top: -2rem;
   }
 
   .item-upsell > span:nth-child(2) > p:nth-child(1) {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .item-upsell > span:nth-child(2) > p:nth-child(2) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   /* Vantagens sobre a maquina */
+  #vantagens {
+    padding: 4rem 2rem;
+  }
+
   .vantagem {
     display: flex;
     flex-direction: column;
@@ -1202,14 +1204,29 @@ p:nth-child(2) {
     align-items: center;
   }
 
+  .vantagem-content > h2 {
+    font-size: 3rem;
+  }
+
   .vantagem-content > p {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  .vantagem-btn {
+    margin: 2rem 0;
   }
 
   /* Carrossel de informações */
+  #carrossel {
+    padding: 1rem 0;
+  }
   .cards-carrossel > h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: .3rem;
   }
 
   .card > span {
@@ -1217,13 +1234,12 @@ p:nth-child(2) {
   }
 
   .card:nth-child(n) .card-content > h2 {
-    font-size: 1.5rem;
-    text-align: justify;
-    border-radius: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
   }
 
   .card:nth-child(n) .card-content > p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     border-radius: 2rem;
     background-color: var(--color-primary);
@@ -1232,11 +1248,11 @@ p:nth-child(2) {
 
   @keyframes carrossel {
     0% {
-      transform: translateX(3px);
+      transform: translateX(10%);
     }
 
     100% {
-      transform: translateX(-3500px);
+      transform: translateX(-1170%);
     }
   }
 
@@ -1254,11 +1270,13 @@ p:nth-child(2) {
     max-height: 240%;
     display: flex;
     flex-direction: column;
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
+    row-gap: 3rem;
   }
 
   .box-maquina > span {
-    margin: 4rem auto;
+    width: 280px;
+    margin: 3rem auto;
   }
 
   .maquina1,
@@ -1291,14 +1309,15 @@ p:nth-child(2) {
 
   .maquina-content > h2 {
     text-align: center;
-    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
     color: var(--color-primary);
   }
 
   .maquina-content > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   /* Pagina sobre */
@@ -1313,9 +1332,9 @@ p:nth-child(2) {
   }
 
   .box-about > p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: justify;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   .box-about .btn-about {
@@ -1325,9 +1344,14 @@ p:nth-child(2) {
 
   .btn-about > a {
     text-align: center;
+    padding: .9rem 3rem;
   }
 
   /* Pagina porvas sociais */
+  #clientes {
+    padding: 0;
+  }
+
   .cliente > h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -1346,10 +1370,10 @@ p:nth-child(2) {
 
   @keyframes avaliacaoAnime {
     0% {
-      transform: translateX(20px);
+      transform: translateX(2%);
     }
     100% {
-      transform: translateX(-1960px);
+      transform: translateX(-85%);
     }
   }
 
@@ -1367,6 +1391,13 @@ p:nth-child(2) {
     column-gap: 0.5rem;
   }
 
+  .avaliacao > span > p:nth-child(1) {
+    font-size: 1.1rem;
+  }
+  .avaliacao > p:nth-child(2) {
+    font-size: 1.1rem;
+  }
+
   /* Pagina de cometario */
   .box-comentario h2 {
     font-size: 2.5rem;
@@ -1375,11 +1406,12 @@ p:nth-child(2) {
 
   .icon-comente > input {
     width: 100%;
+    font-size: 1.1rem;
   }
 
   .icon-comente > input:hover,
   .box-comentario > form > textarea:hover {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /* Botão fixo */

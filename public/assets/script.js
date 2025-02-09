@@ -13,8 +13,8 @@ function btnScroll() {
 };
 btnScroll();
 
-// Animação de :HOVER nos Textos
-function textHover() {
+// Conteudo principal
+function textMain() {
     //Texto 1
     const textPrimary = document.querySelector('.call-content > p');
     const primaryStrong = document.querySelectorAll('.call-content > p > strong');
@@ -47,7 +47,7 @@ function textHover() {
         });
     });
 };
-textHover();
+textMain();
 
 // Animação dos cards
 function textAnimation() {
