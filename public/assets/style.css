@@ -69,7 +69,7 @@ body {
 
 .nav-header li a {
   text-decoration: none;
-  color: var(--color-border);
+  color: var(--color-secondary);
   font-size: 1.2rem;
   font-weight: 500;
   transition: 0.3s;
@@ -78,7 +78,7 @@ body {
 
 .nav-header li a:hover {
   font-weight: 600;
-  color: var(--color-font-black);
+  color: var(--color-primary);
 }
 
 /* Icone navbar */
@@ -87,7 +87,7 @@ body {
 }
 
 .bi-list {
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: var(--color-secondary);
   cursor: pointer;
@@ -95,7 +95,7 @@ body {
 }
 
 .bi-x-lg {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   color: var(--color-secondary);
   cursor: pointer;
@@ -1012,13 +1012,13 @@ p:nth-child(2) {
 
 @media /* Smartphone */ (width <= 440px) {
   .hero .logo {
-    width: 120px;
+    width: 35%;
   }
 
   .box-logo {
-    width: 115px;
+    width: 45%;
     position: absolute;
-    top: 0;
+    top: 0%;
     display: block;
   }
 
@@ -1031,13 +1031,13 @@ p:nth-child(2) {
 
   @keyframes imgAnime {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0%);
     }
     50% {
-      transform: translateY(7px);
+      transform: translateY(12%);
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(0%);
     }
   }
 
@@ -1053,12 +1053,12 @@ p:nth-child(2) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 3rem;
+    row-gap: 6%;
     position: absolute;
-    top: 2rem;
+    top: 1vh;
     left: -2rem;
-    width: 80%;
-    height: 110dvh;
+    width: 0%;
+    height: 100dvh;
     border-bottom-right-radius: 1rem;
     animation: menuOpen 0.6s forwards;
   }
@@ -1078,7 +1078,7 @@ p:nth-child(2) {
     font-size: 1.5rem;
     font-weight: 600;
     position: absolute;
-    bottom: 4rem;
+    bottom: 8%;
     color: var(--color-primary);
     transition: 0.3s;
     display: block;
@@ -1089,7 +1089,7 @@ p:nth-child(2) {
   }
 
   .nav-header > .link {
-    padding: 1rem 0;
+    padding: 4% 0;
     border-radius: 1rem;
     width: 80%;
     text-align: center;
@@ -1101,9 +1101,8 @@ p:nth-child(2) {
   }
 
   .nav-header > .link a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    color: var(--color-secondary);
   }
 
   .navbar-icon {
@@ -1124,9 +1123,20 @@ p:nth-child(2) {
     margin: 6.5rem auto;
   }
 
+  .call-content {
+    row-gap: 1rem;
+  }
+
+  .call-content h1 {
+    font-size: 250%;
+  }
+
   .call-content > p {
     text-align: justify;
-    font-size: 1.3rem;
+  }
+
+  .checkout > a {
+    padding: 4% 15%;
   }
 
   .checkout > a:hover {
@@ -1146,15 +1156,15 @@ p:nth-child(2) {
 
   @keyframes bannerAnime {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0%);
       opacity: 0.9;
     }
     50% {
-      transform: translateY(20px);
+      transform: translateY(7%);
       opacity: 1;
     }
     100% {
-      transform: translateY(0px);
+      transform: translateY(0%);
       opacity: 0.9;
     }
   }
@@ -1330,7 +1340,7 @@ p:nth-child(2) {
   .box-cliente {
     width: 600%;
     flex-flow: nowrap;
-    transition: .3s;
+    transition: 0.3s;
     animation: avaliacaoAnime 50s ease infinite;
   }
 
@@ -1346,7 +1356,7 @@ p:nth-child(2) {
   .cliente-card {
     width: 300px;
     display: grid;
-    row-gap: .2rem;
+    row-gap: 0.2rem;
   }
 
   .cliente-card > span > img {
@@ -1407,7 +1417,7 @@ p:nth-child(2) {
   }
 
   .confident-item > p {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .person > span {
