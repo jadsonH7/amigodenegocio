@@ -390,7 +390,7 @@ body {
   flex-direction: column;
   row-gap: 1rem;
   animation: carrossel 90s infinite;
-  transition: .1s;
+  transition: 0.1s;
   position: relative;
   cursor: pointer;
 }
@@ -572,7 +572,7 @@ body {
   font-weight: 200;
   color: var(--color-secondary);
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .maquina-content {
@@ -720,7 +720,7 @@ body {
 .avaliacao > span > p:nth-child(1) {
   font-size: 1.2rem;
   font-weight: 400;
-  color: var(--color-border);
+  color: var(--color-secondary);
 }
 
 .avaliacao > span > p:nth-child(2) {
@@ -730,13 +730,13 @@ body {
 .avaliacao > p:nth-child(2) {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--color-border);
+  color: var(--color-secondary);
 }
 
 .avaliacao > p:nth-child(3) {
   font-size: 1.1rem;
   font-weight: 400;
-  color: var(--color-border);
+  color: var(--color--color-secondary);
 }
 
 /* Formulario de comentario */
@@ -772,6 +772,7 @@ body {
 .box-comentario > form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 100%;
   row-gap: 3rem;
 }
@@ -1216,19 +1217,18 @@ p:nth-child(2) {
     text-align: justify;
     border-radius: 2rem;
     background-color: var(--color-primary);
-    padding: .3rem;
+    padding: 0.3rem;
   }
 
-  
-@keyframes carrossel {
-  0% {
-    transform: translateX(3px);
-  }
+  @keyframes carrossel {
+    0% {
+      transform: translateX(3px);
+    }
 
-  100% {
-    transform: translateX(-3500px);
+    100% {
+      transform: translateX(-3500px);
+    }
   }
-}
 
   /* Maquininha informações */
   .maquina-line {
@@ -1265,14 +1265,14 @@ p:nth-child(2) {
 
   .maquina-content {
     width: 100%;
-    box-shadow: -1px 2px 5px 1px var(--color-detail);
+    box-shadow: 0px 2px 5px 1px var(--color-detail);
     padding: 1rem 1.3rem;
     border-radius: 1rem;
-    transition: .1s;
+    transition: 0.1s;
   }
 
   .maquina-content:hover {
-    box-shadow: -1px 1px 5px -1px var(--color-primary);
+    box-shadow: 0px 1px 5px -1px var(--color-primary);
   }
 
   .box-maquina > ul > li > span h1 {
@@ -1299,7 +1299,7 @@ p:nth-child(2) {
   }
 
   .box-about > h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .box-about > p {
@@ -1311,5 +1311,106 @@ p:nth-child(2) {
   .box-about .btn-about {
     display: flex;
     flex-direction: column;
+  }
+
+  .btn-about > a {
+    text-align: center;
+  }
+
+  /* Pagina porvas sociais */
+  .cliente > h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .cliente {
+    overflow-x: hidden;
+  }
+
+  .box-cliente {
+    width: 600%;
+    flex-flow: nowrap;
+    transition: .3s;
+    animation: avaliacaoAnime 50s ease infinite;
+  }
+
+  @keyframes avaliacaoAnime {
+    0% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(-1960px);
+    }
+  }
+
+  .cliente-card {
+    width: 300px;
+    display: grid;
+    row-gap: .2rem;
+  }
+
+  .cliente-card > span > img {
+    height: 250px;
+  }
+
+  .avaliacao > span {
+    column-gap: 0.5rem;
+  }
+
+  /* Pagina de cometario */
+  .box-comentario h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .icon-comente > input {
+    width: 100%;
+  }
+
+  .icon-comente > input:hover,
+  .box-comentario > form > textarea:hover {
+    font-size: 1.4rem;
+  }
+
+  /* Botão fixo */
+  #btn-fixo > section a {
+    right: 0;
+  }
+
+  #btn-fixo > section > a i {
+    font-size: 2.5rem;
+  }
+
+  /* Pagina de contato */
+  .logo-social .box-social {
+    column-gap: 1rem;
+  }
+
+  .logo-social > span {
+    width: 50px;
+  }
+
+  .box-social .social {
+    font-size: 1.75rem;
+  }
+
+  .confident {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-top: 1rem;
+  }
+
+  .confident .confident-item {
+    text-align: center;
+  }
+
+  .confident-item > p {
+    padding-bottom: .5rem;
+  }
+
+  .person > span {
+    display: none;
   }
 }
