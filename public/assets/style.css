@@ -1,4 +1,11 @@
-@import url(../font/TonCondensed.ttf);
+@font-face {
+  font-family: 'Ton Condensed';
+  src: url('TonCondensed-Regular.woff2') format('woff2'),
+      url('TonCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   box-sizing: border-box;
@@ -21,7 +28,7 @@ html {
 }
 
 body {
-  font-family: "Ton Condensed";
+  font-family: 'Ton Condensed', sans-serif;
 }
 
 #container {
