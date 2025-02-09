@@ -89,7 +89,7 @@ body {
 .bi-list {
   font-size: 2.5rem;
   font-weight: 500;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   cursor: pointer;
   background-color: transparent;
 }
@@ -97,7 +97,7 @@ body {
 .bi-x-lg {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color-secondary);
+  color: var(--color--color-primary);
   cursor: pointer;
   background-color: transparent;
 }
