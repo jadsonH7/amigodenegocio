@@ -312,6 +312,10 @@ body {
   cursor: default;
 }
 
+.vantagem-content > h2:hover {
+  color: var(--color-primary);
+}
+
 .vantagem-content > p {
   color: var(--color-secondary);
   font-size: 1.2rem;
@@ -1230,13 +1234,17 @@ p:nth-child(2) {
     padding: 1rem 0;
   }
 
+  .cards-carrossel > h2 {
+    text-align: center;
+  }
+
   .card > span {
     width: 300px;
   }
 
   @keyframes carrossel {
     0% {
-      transform: translateX(10%);
+      transform: translateX(8%);
     }
 
     100% {
@@ -1333,6 +1341,10 @@ p:nth-child(2) {
 
   .cliente {
     overflow-x: hidden;
+  }
+
+  .cliente > h2 {
+    text-align: center;
   }
 
   .box-cliente {
