@@ -135,6 +135,7 @@ function sendFree() {
     const width = window.innerWidth;
     if (width <= 440) {
         send.textContent = 'Frete Grátis';
+        send.classList = 'send-title';
         container.append(send);
     }
 }

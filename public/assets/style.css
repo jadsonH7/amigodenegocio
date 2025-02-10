@@ -1376,6 +1376,13 @@ p:nth-child(2) {
     margin-top: 0rem;
   }
 
+  /* Menssagem frete */
+  .send-message > .send-title {
+    font-size: 7rem;
+    margin: -1rem 0;
+    color: var(--color-primary);
+  }
+
   /* Pagina porvas sociais */
   #clientes {
     padding: 0;
