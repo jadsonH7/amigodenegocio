@@ -540,7 +540,7 @@ body {
 }
 
 .maquina-line {
-  background-color: var(--color-border);
+  background: linear-gradient(to top, var(--color-secondary), var(--color-border));
   width: 7px;
   height: 213dvh;
   border-radius: 1rem;
@@ -668,7 +668,7 @@ body {
 /* Menssagem de frete grátis */
 #sends {
   width: 100%;
-  padding: 4rem 0 1rem 0;
+  padding: 3rem 0 1rem 0;
   background: linear-gradient(to bottom, var(--color-detail), var(--color-font-white));
 }
 
@@ -680,7 +680,9 @@ body {
 }
 
 .send-message > h1 {
-  font-size: 3rem;
+  font-size: 8rem;
+  text-align: center;
+  opacity: .2;
   color: var(--color-secondary);
 }
 
