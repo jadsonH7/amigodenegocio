@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Ton Condensed';
-  src: url('TonCondensed-Regular.woff2') format('woff2'),
-      url('TonCondensed-Regular.woff') format('woff');
+  font-family: "Ton Condensed";
+  src: url("TonCondensed-Regular.woff2") format("woff2"),
+    url("TonCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: 'Ton Condensed', sans-serif;
+  font-family: "Ton Condensed", sans-serif;
 }
 
 #container {
@@ -999,14 +999,13 @@ body {
   padding: 2rem 0;
 }
 
-.person
-p, a {
+.person p,
+a {
   color: #919dab;
   text-decoration: none;
 }
 
-.person
-p:nth-child(1),
+.person p:nth-child(1),
 p:nth-child(2) {
   cursor: default;
 }
@@ -1046,7 +1045,8 @@ p:nth-child(2) {
   .item-upsell > span:nth-child(2) > p:nth-child(2),
   .vantagem-content > p,
   .card:nth-child(n) .card-content > p,
-  .box-about > p, i,
+  .box-about > p,
+  i,
   .avaliacao > span > p:nth-child(1),
   .avaliacao > p:nth-child(3),
   .nav-header > .link a {
@@ -1067,9 +1067,9 @@ p:nth-child(2) {
   }
 
   /* Todos os icones */
-  #btn-fixo > section > a i,
+  #btn-fixo > section > a > i,
   .bi-x-lg,
-  .bi-list{
+  .bi-list {
     font-size: 2rem;
   }
 
@@ -1199,13 +1199,13 @@ p:nth-child(2) {
     overflow-x: hidden;
     flex-direction: column;
     row-gap: 1.75rem;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     margin-top: -2rem;
   }
 
   .item-upsell i {
     font-size: 1.7rem;
-    padding: .7rem;
+    padding: 0.7rem;
   }
 
   /* Vantagens sobre a maquina */
@@ -1333,8 +1333,11 @@ p:nth-child(2) {
     gap: 2rem;
   }
 
-  .box-about > p, i {
+  .box-about > p,
+  i {
     font-style: normal;
+    line-height: 1.5rem;
+    letter-spacing: 0;
   }
 
   .btn-about > a {
@@ -1365,10 +1368,10 @@ p:nth-child(2) {
 
   @keyframes avaliacaoAnime {
     0% {
-      transform: translateX(2%);
+      transform: translateX(1%);
     }
     100% {
-      transform: translateX(-85%);
+      transform: translateX(-83%);
     }
   }
 
@@ -1406,12 +1409,12 @@ p:nth-child(2) {
   .logo-social .box-social {
     column-gap: 1.5rem;
   }
+  
+    .logo-social > span {
+      width: 56px;
+    }
 
-  .logo-social > span {
-    width: 50px;
-  }
-
-  .box-social .social {
+  .social a > i {
     font-size: 1.75rem;
   }
 
@@ -1419,7 +1422,7 @@ p:nth-child(2) {
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 3rem;
     padding-top: 1rem;
   }
 
@@ -1428,7 +1431,11 @@ p:nth-child(2) {
   }
 
   .confident-item > p {
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
+  }
+
+  .confident-item > a {
+    padding: 0;
   }
 
   .person > span {
