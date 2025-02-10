@@ -15,7 +15,6 @@ btnScroll();
 
 // Conteudo principal
 function textMain() {
-    //Texto 1
     const textPrimary = document.querySelector('.call-content > p');
     const primaryStrong = document.querySelectorAll('.call-content > p > strong');
 
@@ -27,23 +26,7 @@ function textMain() {
 
     textPrimary.addEventListener('mouseleave', () => {
         primaryStrong.forEach(strong => {
-            strong.style.color = 'var(--color-font-black)';
-        });
-    });
-
-    //Texto 2
-    const textSecondary = document.querySelector('.vantagem-content > p');
-    const secondaryStrong = document.querySelectorAll('.vantagem-content > p > strong');
-
-    textSecondary.addEventListener('mouseenter', () => {
-        secondaryStrong.forEach(strong => {
             strong.style.color = 'var(--color-border)';
-        });
-    });
-
-    textSecondary.addEventListener('mouseleave', () => {
-        secondaryStrong.forEach(strong => {
-            strong.style.color = 'var(--color-secondary)';
         });
     });
 };
@@ -115,6 +98,22 @@ navBar();
 
 // Pagina vantagem
 function vantagens() {
+     //Texto vantagem
+     const textSecondary = document.querySelector('.vantagem-content > p');
+     const secondaryStrong = document.querySelectorAll('.vantagem-content > p > strong');
+ 
+     textSecondary.addEventListener('mouseenter', () => {
+         secondaryStrong.forEach(strong => {
+             strong.style.color = 'var(--color-font-white)';
+         });
+     });
+ 
+     textSecondary.addEventListener('mouseleave', () => {
+         secondaryStrong.forEach(strong => {
+             strong.style.color = 'var(--color-secondary)';
+         });
+     });
+
     const vantagemImg = document.querySelector('.vantagem-img > img')
     const logoMaquina = document.querySelector('.box-maquina > span > img');
 
@@ -122,6 +121,12 @@ function vantagens() {
     if(width <= 440) {
         vantagemImg.src = 'public/imgs/banner/banner-3.png';
         logoMaquina.src = 'public/imgs/logotipo/Ton_Parceiro_Logo_RGB-07.png';
+
+        textSecondary.addEventListener('mouseenter', () => {
+            secondaryStrong.forEach(strong => {
+                strong.style.color = 'var(--color-primary)';
+            });
+        });
     }
 };
 vantagens();
@@ -139,4 +144,4 @@ function sendFree() {
         container.append(send);
     }
 }
-sendFree()
+sendFree();
