@@ -125,3 +125,17 @@ function vantagens() {
     }
 };
 vantagens();
+
+// Texto frete gratis
+function sendFree() {
+    const container = document.querySelector('.send-message');
+    const send = document.querySelector('.send-message > h1')
+
+    
+    const width = window.innerWidth;
+    if (width <= 440) {
+        send.textContent = 'Frete Grátis';
+        container.append(send);
+    }
+}
+sendFree()

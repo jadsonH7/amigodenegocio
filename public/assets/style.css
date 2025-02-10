@@ -581,7 +581,7 @@ body {
 .box-maquina > ul > li > span h1 {
   font-size: 15rem;
   font-weight: 200;
-  color: var(--color-secondary);
+  color: var(--color-border);
   cursor: default;
   opacity: 0.8;
 }
@@ -663,6 +663,33 @@ body {
   color: var(--color-font-white);
   box-shadow: 9px 9px 0px 0px var(--color-secondary);
   letter-spacing: 1px;
+}
+
+/* Menssagem de frete grátis */
+#sends {
+  width: 100%;
+  padding: 4rem 0 1rem 0;
+  background: linear-gradient(to bottom, var(--color-detail), var(--color-font-white));
+}
+
+.send {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.send-message > h1 {
+  font-size: 3rem;
+  color: var(--color-secondary);
+}
+
+.title-send {
+  color: var(--color-primary);
+}
+
+.send-message > h1 > strong {
+  color: var(--color-primary);
 }
 
 /* Dicas do parceiro */
