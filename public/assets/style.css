@@ -709,7 +709,7 @@ body {
 
 .cliente-card > span > img {
   width: 100%;
-  height: 300px;
+  height: 280px;
   object-fit: cover;
   border-radius: 1rem;
   object-position: center;
@@ -1029,7 +1029,7 @@ p:nth-child(2) {
   .box-about > h2,
   .cliente > h2,
   .box-comentario h2 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     font-weight: 700;
   }
 
@@ -1046,10 +1046,11 @@ p:nth-child(2) {
   .item-upsell > span:nth-child(2) > p:nth-child(2),
   .vantagem-content > p,
   .card:nth-child(n) .card-content > p,
-  .box-about > p,
+  .box-about > p, i,
   .avaliacao > span > p:nth-child(1),
-  .avaliacao > p:nth-child(3) {
-    font-size: 1.1rem;
+  .avaliacao > p:nth-child(3),
+  .nav-header > .link a {
+    font-size: 1rem;
     font-weight: 400;
     text-align: justify;
     line-height: 1.5rem;
@@ -1161,11 +1162,6 @@ p:nth-child(2) {
     box-shadow: 0px 1px 3px var(--color-secondary);
   }
 
-  .nav-header > .link a {
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
   .navbar-icon {
     visibility: visible;
   }
@@ -1202,14 +1198,14 @@ p:nth-child(2) {
   .box-upsell {
     overflow-x: hidden;
     flex-direction: column;
-    row-gap: 1.5rem;
-    padding: 1rem 0;
+    row-gap: 1.75rem;
+    padding: .5rem 0;
     margin-top: -2rem;
   }
 
   .item-upsell i {
-    font-size: 1.5rem;
-    padding: 0.5rem;
+    font-size: 1.7rem;
+    padding: .7rem;
   }
 
   /* Vantagens sobre a maquina */
@@ -1246,7 +1242,7 @@ p:nth-child(2) {
   }
 
   .card > span {
-    width: 300px;
+    width: 280px;
   }
 
   @keyframes carrossel {
@@ -1278,8 +1274,8 @@ p:nth-child(2) {
   }
 
   .box-maquina > span {
-    width: 280px;
-    margin: 3rem auto;
+    width: 60%;
+    margin: 2rem auto;
   }
 
   .maquina1,
@@ -1296,8 +1292,8 @@ p:nth-child(2) {
 
   .maquina-content {
     width: 100%;
-    box-shadow: 0px 2px 5px 1px var(--color-detail);
-    padding: 1rem 1.3rem;
+    box-shadow: 0px 2px 5px 2px var(--color-detail);
+    padding: 1rem 1.5rem;
     border-radius: 1rem;
     transition: 0.1s;
   }
@@ -1334,11 +1330,17 @@ p:nth-child(2) {
   .box-about .btn-about {
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box-about > p, i {
+    font-style: normal;
   }
 
   .btn-about > a {
     text-align: center;
     padding: 0.9rem 3rem;
+    margin-top: 0rem;
   }
 
   /* Pagina porvas sociais */
