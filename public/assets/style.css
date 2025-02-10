@@ -1363,7 +1363,7 @@ p:nth-child(2) {
   .box-cliente {
     width: 600%;
     flex-flow: nowrap;
-    transition: 0.3s;
+    transition: 0.1s;
     animation: avaliacaoAnime 50s ease infinite;
   }
 
@@ -1372,7 +1372,7 @@ p:nth-child(2) {
       transform: translateX(1%);
     }
     100% {
-      transform: translateX(-83%);
+      transform: translateX(-84%);
     }
   }
 
