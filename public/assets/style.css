@@ -1255,6 +1255,10 @@ p:nth-child(2) {
     align-items: center;
   }
 
+  .vantagem-content > h2:hover {
+    color: var(--color-primary);
+  }
+
   .vantagem-content > p strong:hover {
     color: var(--color-primary);
   }
