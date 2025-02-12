@@ -70,10 +70,10 @@ function navBar() {
 
     btnCloseMenu.addEventListener('click', () => {
         navLinks.style.display = 'none';
-
+        
         btnOpenMenu.style.display = 'flex';
         btnCloseMenu.style.display = 'none';
-
+        
         logo.classList.remove('logo-position');
         logo.style.visibility = 'visible';
     });

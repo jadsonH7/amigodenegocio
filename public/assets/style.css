@@ -1259,6 +1259,10 @@ p:nth-child(2) {
     color: var(--color-primary);
   }
 
+  .vantagem-content > p strong {
+    color: var(--color-secondary);
+  }
+
   .vantagem-content > p strong:hover {
     color: var(--color-primary);
   }
@@ -1458,6 +1462,12 @@ p:nth-child(2) {
 
   .social a > i {
     font-size: 1.75rem;
+    transition: .3s;
+  }
+
+  .social a > i:hover {
+    font-size: 2rem;
+    color: var(--color-primary);
   }
 
   .confident {
@@ -1478,6 +1488,13 @@ p:nth-child(2) {
 
   .confident-item > a {
     padding: 0;
+    transition: .3s;
+  }
+
+  .confident-item > a:hover {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: var(--color-primary);
   }
 
   .person > span {
