@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Ton Condensed";
-  src: url("TonCondensed-Regular.woff2") format("woff2"),
-    url("TonCondensed-Regular.woff") format("woff");
+  font-family: 'Ton Condensed';
+  src: url('TonCondensed-Regular.woff2') format('woff2'),
+      url('TonCondensed-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -77,14 +77,13 @@ body {
 .nav-header li a {
   text-decoration: none;
   color: var(--color-secondary);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.6s;
   margin: 1rem;
 }
 
 .nav-header li a:hover {
-  font-weight: 600;
   color: var(--color-primary);
 }
 
@@ -173,6 +172,7 @@ body {
   font-weight: 500;
   color: var(--color-font-black);
   cursor: default;
+  line-height: 2rem;
 }
 
 .call-content > p strong {
@@ -204,7 +204,7 @@ body {
   text-decoration: none;
   border-radius: 1rem;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   background-color: var(--color-font-white);
   color: var(--color-secondary);
   transition: 0.3s;
@@ -348,7 +348,7 @@ body {
   color: var(--color-font-white);
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -378,7 +378,7 @@ body {
 .cards-carrossel > h2 {
   font-size: 3rem;
   color: var(--color-font-white);
-  padding: 2rem 0;
+  padding: 2rem;
 }
 
 .cards-carrossel > h2 > strong {
@@ -414,7 +414,7 @@ body {
 }
 
 .card > span {
-  width: 400px;
+  width: 300px;
 }
 
 .card > span > img {
@@ -537,7 +537,11 @@ body {
 }
 
 .maquina-line {
-  background: linear-gradient(to top, var(--color-secondary), var(--color-border));
+  background: linear-gradient(
+    to top,
+    var(--color-secondary),
+    var(--color-border)
+  );
   width: 7px;
   height: 213dvh;
   border-radius: 1rem;
@@ -616,7 +620,7 @@ body {
 
 .box-about > h2 {
   color: var(--color-primary);
-  font-size: 2rem;
+  font-size: 2.5rem;
   cursor: default;
 }
 
@@ -642,7 +646,7 @@ body {
   margin-top: 3rem;
   border-radius: 1rem;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
   background-color: var(--color-primary);
   color: var(--color-font-white);
   transition: 0.3s;
@@ -666,7 +670,11 @@ body {
 #sends {
   width: 100%;
   padding: 3rem 0 1rem 0;
-  background: linear-gradient(to bottom, var(--color-detail), var(--color-font-white));
+  background: linear-gradient(
+    to bottom,
+    var(--color-detail),
+    var(--color-font-white)
+  );
 }
 
 .send {
@@ -679,7 +687,7 @@ body {
 .send-message > h1 {
   font-size: 8rem;
   text-align: center;
-  opacity: .2;
+  opacity: 0.2;
   color: var(--color-secondary);
 }
 
@@ -1455,14 +1463,14 @@ p:nth-child(2) {
   .logo-social .box-social {
     column-gap: 1.5rem;
   }
-  
-    .logo-social > span {
-      width: 56px;
-    }
+
+  .logo-social > span {
+    width: 56px;
+  }
 
   .social a > i {
     font-size: 1.75rem;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .social a > i:hover {
@@ -1483,12 +1491,12 @@ p:nth-child(2) {
   }
 
   .confident-item > p {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   .confident-item > a {
     padding: 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .confident-item > a:hover {
@@ -1499,5 +1507,104 @@ p:nth-child(2) {
 
   .person > span {
     display: none;
+  }
+}
+
+@media (width >= 1921px) {
+  .hero .nav-header {
+    justify-content: end;
+  }
+}
+
+@media /*Notebook*/ (width <= 1920px) {
+  .vantagem-content {
+    width: 38%;
+    top: 5rem;
+    right: 9rem;
+    row-gap: 0;
+  }
+
+  .vantagem-content > h2 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .cards-carrossel > h2 {
+    font-size: 2.5rem;
+  }
+
+  .card:nth-child(n) .card-content > h2 {
+    font-size: 1.3rem;
+  }
+  
+  .card:nth-child(n) .card-content > p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  @keyframes carrossel {
+    0% {
+      transform: translateX(4%);
+    }
+  
+    100% {
+      transform: translateX(-900%);
+    }
+  }
+
+  .box-maquina > ul > li > span h1 {
+    font-size: 13rem;
+    font-weight: 200;
+  }
+
+  .maquina-content > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: .75rem;
+  }
+
+  .maquina-content > p {
+    font-size: 1rem;
+  }
+
+  .box-maquina > ul {
+    max-height: 290dvh;
+  }
+
+  .maquina-line {
+    height: 275dvh;
+  }
+
+  .box-about > h2 {
+    font-size: 2rem;
+  }
+
+  .box-about > p {
+    font-size: 1rem;
+  }
+
+  .cliente > h2 {
+    font-size: 2rem;
+  }
+
+  .cliente-card {
+    width: 250px;
+  }
+
+  .cliente-card > span > img {
+    height: 250px;
+    margin-bottom: .75rem;
+  }
+
+  .avaliacao > p:nth-child(2), .avaliacao > p:nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .box-comentario h2 {
+    font-size: 2rem;
+  }
+
+  .icon-comente > input:hover, .box-comentario > form > textarea:hover {
+    font-size: 1.3rem;
   }
 }
