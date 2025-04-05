@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Ton Condensed';
-  src: url('TonCondensed-Regular.woff2') format('woff2'),
-      url('TonCondensed-Regular.woff') format('woff');
+  font-family: "Ton Condensed";
+  src: url("TonCondensed-Regular.woff2") format("woff2"),
+    url("TonCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1516,7 +1516,7 @@ p:nth-child(2) {
   }
 }
 
-@media /*Notebook*/ (width <= 1920px) {
+@media /*Notebook*/ (width >= 1200px) {
   .vantagem-content {
     width: 38%;
     top: 5rem;
@@ -1536,7 +1536,7 @@ p:nth-child(2) {
   .card:nth-child(n) .card-content > h2 {
     font-size: 1.3rem;
   }
-  
+
   .card:nth-child(n) .card-content > p {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1546,7 +1546,7 @@ p:nth-child(2) {
     0% {
       transform: translateX(4%);
     }
-  
+
     100% {
       transform: translateX(-900%);
     }
@@ -1560,7 +1560,7 @@ p:nth-child(2) {
   .maquina-content > h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    padding-bottom: .75rem;
+    padding-bottom: 0.75rem;
   }
 
   .maquina-content > p {
@@ -1572,6 +1572,7 @@ p:nth-child(2) {
   }
 
   .maquina-line {
+    width: 5px;
     height: 275dvh;
   }
 
@@ -1593,10 +1594,11 @@ p:nth-child(2) {
 
   .cliente-card > span > img {
     height: 250px;
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
-  .avaliacao > p:nth-child(2), .avaliacao > p:nth-child(3) {
+  .avaliacao > p:nth-child(2),
+  .avaliacao > p:nth-child(3) {
     font-size: 1rem;
   }
 
@@ -1604,7 +1606,8 @@ p:nth-child(2) {
     font-size: 2rem;
   }
 
-  .icon-comente > input:hover, .box-comentario > form > textarea:hover {
+  .icon-comente > input:hover,
+  .box-comentario > form > textarea:hover {
     font-size: 1.3rem;
   }
 }
